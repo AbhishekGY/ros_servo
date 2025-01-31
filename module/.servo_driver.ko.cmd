@@ -1,0 +1,1 @@
+cmd_/home/abhishek/Desktop/servo_driver/module/servo_driver.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/abhishek/Desktop/servo_driver/module/servo_driver.ko /home/abhishek/Desktop/servo_driver/module/servo_driver.o /home/abhishek/Desktop/servo_driver/module/servo_driver.mod.o;  true

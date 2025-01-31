@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+*.so
+
+# Kernel Module
+*.ko
+*.mod
+*.mod.c
+*.o
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
