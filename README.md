@@ -7,7 +7,7 @@ A servo motor control system built on top of the ros-like-system framework. This
 - Linux system with kernel headers installed
 - Python 3.7+
 - `tty0tty` kernel module (for virtual serial ports)
-- [ros-like-system](https://github.com/yourusername/ros-like-system) installed in your Python environment
+- [ros-like-system](https://github.com/AbhishekGY/ros_like_system.git) installed in your Python environment
 
 ## Installation
 
