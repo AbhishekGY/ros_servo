@@ -119,10 +119,12 @@ static ssize_t dev_read(struct file *filep, char *buffer, size_t len, loff_t *of
     ret = wait_event_interruptible(servo_wait, data_available);
     if (ret)
         return ret;
-        
+    
+    mutex_lock(&servo_mutex);
     data_available = 0;  // Reset the flag
     
     bytes_written = snprintf(angle_str, sizeof(angle_str), "%d\n", servo_angle);
+    mutex_unlock(&servo_mutex);
     
     if (bytes_written > len) {
         bytes_written = len;
