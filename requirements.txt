@@ -1,2 +1,2 @@
-pygame>=2.0.0
+wheel
 git+https://github.com/AbhishekGY/ros_like_system.git
