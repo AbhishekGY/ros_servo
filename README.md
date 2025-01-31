@@ -2,7 +2,7 @@
 
 A servo motor control system built on top of the ros-like-system framework. This project provides a Linux kernel module for servo control and a ROS-like node for publishing servo states.
 
-![Wokwi with ROS](docs/images/Peek 2025-01-31 14-30.gif)
+![Wokwi with ROS](docs/images/result.gif)
 
 ## Prerequisites
 
