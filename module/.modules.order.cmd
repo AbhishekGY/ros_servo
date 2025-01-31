@@ -1,1 +1,0 @@
-cmd_/home/abhishek/Desktop/servo_driver/module/modules.order := {   echo /home/abhishek/Desktop/servo_driver/module/servo_driver.ko; :; } | awk '!x[$$0]++' - > /home/abhishek/Desktop/servo_driver/module/modules.order

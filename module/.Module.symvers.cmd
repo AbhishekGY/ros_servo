@@ -1,1 +1,0 @@
-cmd_/home/abhishek/Desktop/servo_driver/module/Module.symvers := sed 's/\.ko$$/\.o/' /home/abhishek/Desktop/servo_driver/module/modules.order | scripts/mod/modpost -m -a  -o /home/abhishek/Desktop/servo_driver/module/Module.symvers -e -i Module.symvers   -T -
