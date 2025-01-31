@@ -73,6 +73,20 @@ sudo ./setup.sh
 - Installation handled via requirements.txt
 - Visit [ros-like-system repository](https://github.com/yourusername/ros-like-system) for more details
 
+## Wokwi Simulation
+
+[Wokwi](https://wokwi.com/) is an online platform for simulating Arduino and other electronic projects. This project includes Wokwi configuration files to help you simulate the servo control system.
+
+### Using Wokwi Files
+1. Go to [Wokwi](https://wokwi.com/)
+2. Create a new Arduino project
+3. Replace the default `diagram.json` with our provided file in the `wokwi` directory
+4. Replace the default Arduino sketch with our `sketch.ino`
+5. Add Servo library in Library Manager
+5. Click "Run Simulation" to see the servo in action
+
+The provided files set up a servo motor simulation that can be controlled via serial communication, matching our physical system's behavior.
+
 
 ## Usage
 
@@ -94,6 +108,9 @@ sudo ./setup.sh
 ├── module/
 │   ├── Makefile
 │   └── servo_driver.c
+├── wokwi/
+│   ├── diagram.json
+│   └── sketch.ino
 ├── servo_publisher.py
 ├── setup.sh
 ├── requirements.txt

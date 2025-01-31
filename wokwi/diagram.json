@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    { "id": "uno", "type": "wokwi-arduino-uno", "top": 200, "left": 20 },
+
+    {
+      "id": "servo",
+      "type": "wokwi-servo",
+      "left": 400,
+      "top": 200,
+      "attrs": { "hornColor": "black" },
+      "rotate": 0
+    },
+    {
+      "type": "wokwi-serial-port",
+      "id": "serial",
+      "top": 0,
+      "left": 150,
+      "attrs": { "baud": "9600" }
+    }
+
+
+  ],
+  "connections": [
+    ["uno:9", "servo:PWM", "orange", ["v-20", "*", "h0", "h-52"]],
+    ["uno:5V", "servo:V+", "red", ["v20", "h0", "*", "h-20"]],
+    ["uno:GND.1", "servo:GND", "black", ["v-28","h240", "*", "h-20"]],
+    [ "uno:0", "serial:TX", "" ],     
+    [ "uno:1", "serial:RX", "" ],     
+    [ "$serialMonitor:RX", "uno:1", "" ],  
+    [ "$serialMonitor:TX", "uno:0", "" ]  ],
+  "serialMonitor": { "display": "always", "newline": "none" }
+}
