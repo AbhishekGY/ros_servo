@@ -29,32 +29,27 @@ sudo modprobe tty0tty
 sudo chmod 666 /dev/tnt*
 ```
 
-### 2. Install ros-like-system:
+### 2. Clone this repository:
 ```bash
-pip install requirements.txt
+git clone https://github.com/AbhishekGY/ros_servo.git
+cd ros_servo
 ```
 
-### 3. Clone this repository:
-```bash
-git clone https://github.com/yourusername/servo-control.git
-cd servo-control
-```
-
-### 4. Setup Python virtual environment:
+### 3. Setup Python virtual environment and install requirements:
 ```bash
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 5. Build the kernel module:
+### 4. Build the kernel module:
 ```bash
 cd module
 make
 cd ..
 ```
 
-### 6. Run the setup script:
+### 5. Run the setup script:
 ```bash
 sudo ./setup.sh
 ```
@@ -70,6 +65,14 @@ sudo ./setup.sh
 - Interfaces with the kernel module
 - Publishes servo positions to the ROS network
 - Real-time state updates
+
+### ROS-like System
+- Provides the core publish/subscribe infrastructure
+- Handles network communication between nodes
+- Includes robot visualization capabilities
+- Installation handled via requirements.txt
+- Visit [ros-like-system repository](https://github.com/yourusername/ros-like-system) for more details
+
 
 ## Usage
 
